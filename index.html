@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Spell-IT</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
+
 <body>
-    <button id="btnPlay" type="button">PLAY!</button>
-    <button id="btnHearWordAgain" type="button">Hear Word Again</button>
-    <form id="form">
-        <button type="button" id="btnHint">Hint</button>
-        <button type="reset">Remove Word</button>
-        <input type="text" name="userWordGuess" id="userWordGuess" required>
-        <button type="submit">Enter</button>
-    </form>
+    <div class="registration" id="screenRegistration">
+        <form id="formUserRegistration">
+            Enter Your Name: <input type="text" name="inpUserName" id="inpUserName" required>
+            <button type="submit">Let's Play!</button>
+        </form>
+    </div>
+
+    <div class="game hidden" id="screenGame">
+        <div class="controls" id="controls">
+            <button id="btnHearWordAgain" type="button">Hear Word Again</button>
+            <button type="button" id="btnSkipWord">Skip this word</button>
+            <button type="button" id="btnHint">Hint</button>
+        </div>
+
+        <form id="formUserWordGuess" class="gameForm">
+            <input type="text" name="inpUserWordGuess" id="inpUserWordGuess" required>
+            <button type="submit">Enter</button>
+        </form>
+
+        <div class="gameInformation" id="gameInformation">
+            <span id="gameInformationUserName"></span> <br>
+            <span id="gameInfromationCorrectGuesses"></span> <br>
+            <span id="gameInfromationWrongGuesses"></span>
+        </div>
+    </div>
+
     <script src="app.js" type="module"></script>
 </body>
+
 </html>

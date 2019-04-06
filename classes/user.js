@@ -4,4 +4,12 @@ export class User {
         this.correctGuesses = 0;
         this.failedGuesses = 0;
     }
+
+    addCorrectGuessPoint(){
+        this.correctGuesses++;
+    }
+
+    addWrongGuessPoint(){
+        this.failedGuesses++;
+    }
 }

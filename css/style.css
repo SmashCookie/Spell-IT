@@ -1,0 +1,27 @@
+.hidden {
+    display: none;
+}
+
+body html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(116, 214, 204);
+    text-align: center;
+    font-size: 3em;
+}
+
+.registration{
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    border: none;
+    background-color: rgb(116, 214, 204);
+    border-bottom: 1px solid black;
+}
