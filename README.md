@@ -1,1 +1,2 @@
-spell_it
+# Spell-it Game made with JavaScript
+Made by *Christian Halvorsen*
