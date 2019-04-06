@@ -1,6 +1,6 @@
 class GameClass {
-    getInputValue(inputElement){
-        return inputElement.value;
+    getInputValue(inputElementID){
+        return document.querySelector(`${inputElementID}`).value;
     }
 
     checkIfGuessedWordMatchesCorrectWord(userWord, correctWord){
@@ -17,10 +17,6 @@ class GameClass {
         const randomNumberBasedOnAmountOfWords = Math.floor(Math.random()*listOfAvalibleWords.length);
         return listOfAvalibleWords[randomNumberBasedOnAmountOfWords];
     }
-
-    // var msg = new SpeechSynthesisUtterance('Hello World');
-    // msg.lang = 'en-US';
-    // window.speechSynthesis.speak(msg);
 
     sayWordOutLoud(wordToSay){
         const msg = new SpeechSynthesisUtterance(wordToSay);
